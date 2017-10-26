@@ -3,6 +3,15 @@
 	font-style: italic;
 	src: url('../font/Mrs Eaves OT Roman.otf') format('opentype');
 }
+@font-face {
+	font-family: SagoeWPNsemiBold;
+	src: url('../font/SegoeWP-Semibold.ttf') format('truerype');
+}
+@font-face {
+	font-family: SagoeWPNLight;
+	src: url('../font/SegoeWP-Light.ttf') format('truerype');
+}
+
 header {
 	background: url('../img/bg_header.jpg') no-repeat;
 	background-size: 100%;
@@ -28,5 +37,131 @@ header {
 		font-size: 22px;
 		color: #fff;
 	}
+
+	.carousel {
+		
+		.carousel-inner {
+				.item{
+					margin-top: 75px;
+					margin-left: 100px;
+					img{
+						margin-left: 110px;
+					}
+					h1 {
+						font-family: SagoeWPNsemiBold;
+						font-size: 64px;
+						color: #fff;
+						margin-top: 40px;
+						margin-bottom: 0;
+					}
+					h2 {
+						font-family: SagoeWPNLight;
+						font-size: 45px;
+						color: #fff;
+						margin-top: 0;
+					}
+					button {
+						font-family: SagoeWPNLight;
+						font-size: 22px;
+						font-weight: 200;
+						color: #fff;
+						background: #185e3d;
+						border: 3px solid rgba(0, 0, 0, .5);
+						border-radius: 5px;
+						width: 140px;
+						height: 40px;
+					}
+				}
+			}
+
+
+		.carousel-control{
+			background: transparent;
+			span {
+				margin-top: 150px;
+				border: 2px solid rgba(255, 255, 255, .7);
+				border-radius: 50%;
+				font-size: 30px;
+				width: 40px;
+				height: 40px;
+				
+			}
+			.fa-caret-right{
+				padding-top: 5px;
+				padding-left: 5px;
+			}
+			.fa-caret-left {
+				padding-top: 5px;
+				padding-left: 5px;
+				letter-spacing: 10px;
+			}
+		}
+	}
 	
+}
+
+.tabs {
+	margin-top: 50px;
+	.nav-tabs {
+		li {
+			text-align: center;
+			.blue {
+				background: #6598e6;
+			}
+			.yellow {
+				background: #fdcf0a;
+			}
+			.green {
+				background: #12b367;
+			}
+			.orange {
+				background: #e67624;
+			}
+
+			.hexahedron {
+				height: 80px;
+				width: 140px;
+				position: relative;
+				margin-top: 50px;
+				margin-bottom: 50px;
+				margin-left: 25px;
+				text-align: center;
+				span {
+					color: #fff;
+					font-size: 80px;
+				}
+
+			}
+			.hexahedron::before {
+				content: '';
+				position: absolute;
+				top: -40px;
+				left: 0;
+				width: 0;
+				height: 0;
+				border-left: 70px solid transparent;
+				border-right: 70px solid transparent;
+				border-bottom: 40px solid;
+
+			}
+			.hexahedron::after {
+				content: "";
+				position: absolute;
+				bottom: -40px;
+				left: 0;
+				width: 0;
+				height: 0;
+				border-left: 70px solid transparent;
+				border-right: 70px solid transparent;
+				border-top: 40px solid;
+
+			}
+			h3 {
+				text-align: center;
+
+			}
+
+		}
+	}
+
 }

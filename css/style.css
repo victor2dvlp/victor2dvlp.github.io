@@ -24,7 +24,7 @@ header {
     color: #b7bbbd;
     margin-top: 55px; }
   header li {
-    margin-left: 30px;
+    margin-right: 70px;
     font-family: Arial;
     font-size: 22px;
     color: #fff; }
@@ -73,48 +73,75 @@ header {
 
 .tabs {
   margin-top: 50px; }
-  .tabs .nav-tabs li {
-    text-align: center; }
-    .tabs .nav-tabs li .blue {
-      background: #6598e6; }
-    .tabs .nav-tabs li .yellow {
-      background: #fdcf0a; }
-    .tabs .nav-tabs li .green {
-      background: #12b367; }
-    .tabs .nav-tabs li .orange {
-      background: #e67624; }
-    .tabs .nav-tabs li .hexahedron {
-      height: 80px;
-      width: 140px;
-      position: relative;
-      margin-top: 50px;
-      margin-bottom: 50px;
-      margin-left: 25px;
-      text-align: center; }
-      .tabs .nav-tabs li .hexahedron span {
-        color: #fff;
-        font-size: 80px; }
-    .tabs .nav-tabs li .hexahedron::before {
-      content: '';
-      position: absolute;
-      top: -40px;
-      left: 0;
-      width: 0;
-      height: 0;
-      border-left: 70px solid transparent;
-      border-right: 70px solid transparent;
-      border-bottom: 40px solid; }
-    .tabs .nav-tabs li .hexahedron::after {
-      content: "";
-      position: absolute;
-      bottom: -40px;
-      left: 0;
-      width: 0;
-      height: 0;
-      border-left: 70px solid transparent;
-      border-right: 70px solid transparent;
-      border-top: 40px solid; }
-    .tabs .nav-tabs li h3 {
-      text-align: center; }
+  .tabs .tab-content {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px; }
+  .tabs .nav-tabs {
+    padding: 0 2px 0 2px;
+    border-bottom: none; }
+    .tabs .nav-tabs .nav-tabs.active {
+      margin-bottom: -5px;
+      padding-top: 5px; }
+    .tabs .nav-tabs .nav-tabs.active a {
+      border-bottom: 5px solid #fff; }
+    .tabs .nav-tabs li {
+      text-align: center;
+      margin-bottom: -1px; }
+      .tabs .nav-tabs li .blue {
+        background: #6598e6; }
+      .tabs .nav-tabs li .blue.hexahedron::before {
+        border-bottom-color: #6598e6; }
+      .tabs .nav-tabs li .blue.hexahedron::after {
+        border-top-color: #6598e6; }
+      .tabs .nav-tabs li .yellow {
+        background: #fdcf0a; }
+      .tabs .nav-tabs li .yellow.hexahedron::before {
+        border-bottom-color: #fdcf0a; }
+      .tabs .nav-tabs li .yellow.hexahedron::after {
+        border-top-color: #fdcf0a; }
+      .tabs .nav-tabs li .green {
+        background: #12b367; }
+      .tabs .nav-tabs li .green.hexahedron::before {
+        border-bottom-color: #12b367; }
+      .tabs .nav-tabs li .green.hexahedron::after {
+        border-top-color: #12b367; }
+      .tabs .nav-tabs li .orange {
+        background: #e67624; }
+      .tabs .nav-tabs li .orange.hexahedron::before {
+        border-bottom-color: #e67624; }
+      .tabs .nav-tabs li .orange.hexahedron::after {
+        border-top-color: #e67624; }
+      .tabs .nav-tabs li .hexahedron {
+        height: 80px;
+        width: 140px;
+        position: relative;
+        margin-top: 50px;
+        margin-bottom: 50px; }
+        .tabs .nav-tabs li .hexahedron span {
+          color: #fff;
+          font-size: 80px; }
+      .tabs .nav-tabs li .hexahedron::before {
+        content: '';
+        position: absolute;
+        top: -40px;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-left: 70px solid transparent;
+        border-right: 70px solid transparent;
+        border-bottom: 40px solid; }
+      .tabs .nav-tabs li .hexahedron::after {
+        content: "";
+        position: absolute;
+        bottom: -40px;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-left: 70px solid transparent;
+        border-right: 70px solid transparent;
+        border-top: 40px solid; }
+      .tabs .nav-tabs li h3 {
+        text-align: center; }
 
 /*# sourceMappingURL=style.css.map */

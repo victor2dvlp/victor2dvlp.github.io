@@ -77,6 +77,25 @@ header {
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px; }
+    .tabs .tab-content .tablet {
+      position: relative;
+      height: 350px;
+      margin-top: 50px;
+      left: 150px;
+      top: 0; }
+      .tabs .tab-content .tablet img {
+        position: absolute;
+        left: 80px;
+        top: 40px;
+        z-index: 1; }
+      .tabs .tab-content .tablet img + img {
+        left: 0;
+        top: 0;
+        z-index: 0; }
+    .tabs .tab-content .text-pane {
+      position: relative;
+      left: 0;
+      top: 0; }
   .tabs .nav-tabs {
     padding: 0 2px 0 2px;
     border-bottom: none; }
@@ -143,5 +162,39 @@ header {
         border-top: 40px solid; }
       .tabs .nav-tabs li h3 {
         text-align: center; }
+
+.tab-pane {
+  padding: 30px 50px 30px 50px; }
+
+.whychoose {
+  padding-top: 50px; }
+  .whychoose .browser {
+    position: relative;
+    height: 450px; }
+    .whychoose .browser img {
+      position: absolute;
+      left: 0;
+      top: 0; }
+    .whychoose .browser img + img {
+      position: absolute;
+      left: 18px;
+      top: 70px; }
+  .whychoose .descript {
+    overflow-x: visible;
+    white-space: nowrap; }
+    .whychoose .descript ul {
+      list-style-position: inside;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      font-size: 1.5em; }
+      .whychoose .descript ul li {
+        margin-top: .3em; }
+      .whychoose .descript ul li::before {
+        content: '\f058';
+        font-family: FontAwesome;
+        color: #e67624;
+        font-size: 1em;
+        margin-right: 10px; }
 
 /*# sourceMappingURL=style.css.map */

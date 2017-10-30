@@ -17,12 +17,13 @@ header {
     border: none; }
   header .navbar-nav {
     margin-top: 40px; }
-  header .navbar-brand {
+  header #brand {
     font-family: MrsEavesItalic;
     font-style: italic;
     font-size: 118px;
     color: #b7bbbd;
-    margin-top: 55px; }
+    margin-top: 55px;
+    margin-left: 100px; }
   header li {
     margin-right: 70px;
     font-family: Arial;

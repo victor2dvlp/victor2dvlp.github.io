@@ -10,8 +10,8 @@
   src: url("../font/SegoeWP-Light.ttf") format("truerype"); }
 header {
   background: url("../img/bg_header.jpg") no-repeat;
-  background-size: 100%;
-  height: 490px; }
+  max-width: 1366px;
+  margin: 0 auto; }
   header .navbar-default {
     background: transparent;
     border: none; }
@@ -20,48 +20,45 @@ header {
   header #brand {
     font-family: MrsEavesItalic;
     font-style: italic;
-    font-size: 118px;
+    font-size: 8em;
     color: #b7bbbd;
     margin-top: 55px;
-    margin-left: 100px; }
+    margin-left: 0; }
   header li {
     margin-right: 70px;
     font-family: Arial;
-    font-size: 22px;
+    font-size: 1em;
     color: #fff; }
-  header .carousel .carousel-inner .item {
-    margin-top: 75px;
-    margin-left: 100px; }
-    header .carousel .carousel-inner .item img {
-      margin-left: 110px; }
-    header .carousel .carousel-inner .item h1 {
-      font-family: SagoeWPNsemiBold;
-      font-size: 64px;
-      color: #fff;
-      margin-top: 40px;
-      margin-bottom: 0; }
-    header .carousel .carousel-inner .item h2 {
-      font-family: SagoeWPNLight;
-      font-size: 45px;
-      color: #fff;
-      margin-top: 0; }
-    header .carousel .carousel-inner .item button {
-      font-family: SagoeWPNLight;
-      font-size: 22px;
-      font-weight: 200;
-      color: #fff;
-      background: #185e3d;
-      border: 3px solid rgba(0, 0, 0, 0.5);
-      border-radius: 5px;
-      width: 140px;
-      height: 40px; }
+  header .carousel .carousel-inner .item img {
+    margin-left: 10%; }
+  header .carousel .carousel-inner .item h1 {
+    font-family: SagoeWPNsemiBold;
+    font-size: 3em;
+    color: #fff;
+    margin-top: 40px;
+    margin-bottom: 0; }
+  header .carousel .carousel-inner .item h2 {
+    font-family: SagoeWPNLight;
+    font-size: 1.5em;
+    color: #fff;
+    margin-top: 0; }
+  header .carousel .carousel-inner .item button {
+    font-family: SagoeWPNLight;
+    font-size: 1em;
+    font-weight: 200;
+    color: #fff;
+    background: #185e3d;
+    border: 3px solid rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    width: 140px;
+    height: 40px; }
   header .carousel .carousel-control {
     background: transparent; }
     header .carousel .carousel-control span {
       margin-top: 150px;
       border: 2px solid rgba(255, 255, 255, 0.7);
       border-radius: 50%;
-      font-size: 30px;
+      font-size: 1.5em;
       width: 40px;
       height: 40px; }
     header .carousel .carousel-control .fa-caret-right {
@@ -86,8 +83,8 @@ header {
       top: 0; }
       .tabs .tab-content .tablet img {
         position: absolute;
-        left: 80px;
-        top: 40px;
+        left: 10%;
+        top: 10%;
         z-index: 1; }
       .tabs .tab-content .tablet img + img {
         left: 0;

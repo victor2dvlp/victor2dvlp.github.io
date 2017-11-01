@@ -38,20 +38,22 @@ header {
       margin-top: 20px;
       margin-right: 50px; }
       header .navbar-collapse ul li {
+        padding: 0 5px;
         font-size: 20px;
         margin-right: 40px;
-        color: #fff; }
+        color: #fff;
+        transition: all .5s; }
       header .navbar-collapse ul li:hover {
-        padding: 3px;
         text-shadow: 0 4px 15px #0b05e7;
         border-radius: 10px;
-        background: radial-gradient(#0b05e7 30%, transparent); }
+        background: radial-gradient(rgba(255, 255, 255, 0.5) 30%, transparent);
+        transition: all 1s; }
       header .navbar-collapse ul li:active {
         text-shadow: 0 4px 15px #e24228;
-        padding: 3px;
         text-shadow: 0 4px 15px #e24228;
         border-radius: 10px;
-        background: radial-gradient(#e24228 30%, transparent); }
+        background: radial-gradient(rgba(226, 66, 40, 0.5) 30%, transparent);
+        transition: all 1s; }
   header .navbar-header button {
     margin-top: 50px; }
   header #brand {
@@ -115,18 +117,12 @@ header {
     border-radius: 5px; }
     .tabs .tab-content .tablet {
       position: relative;
-      height: 350px;
-      margin-top: 50px;
-      top: 0; }
+      background: url("../img/device.png") no-repeat;
+      -webkit-background-size: 104% 112%;
+      background-size: 104% 112%;
+      background-position: center; }
       .tabs .tab-content .tablet img {
-        position: absolute;
-        left: 10%;
-        top: 10%;
-        z-index: 1; }
-      .tabs .tab-content .tablet img + img {
-        left: 0;
-        top: 0;
-        z-index: 0; }
+        position: absolute; }
     .tabs .tab-content .text-pane {
       position: relative;
       left: 0;
@@ -134,9 +130,6 @@ header {
   .tabs .nav-tabs {
     padding: 0 2px 0 2px;
     border-bottom: none; }
-    .tabs .nav-tabs .nav-tabs.active {
-      margin-bottom: -5px;
-      padding-top: 5px; }
     .tabs .nav-tabs .nav-tabs.active a {
       border-bottom: 5px solid #fff; }
     .tabs .nav-tabs li {
@@ -201,7 +194,23 @@ header {
       font-size: 1em;
       margin-right: 10px; }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 768px) {
+  .nav-tabs.active {
+    margin-bottom: -5px;
+    padding-top: 12px; }
+
+  .tablet {
+    height: 115px;
+    width: 300px;
+    margin: 50px auto;
+    padding-left: 3%;
+    padding-top: 3%; }
+    .tablet img {
+      height: 80px;
+      width: 250px;
+      top: -10px;
+      left: 25px; }
+
   .carousel .carousel-inner h1 {
     font-size: 24px; }
   .carousel .carousel-inner h2 {
@@ -209,40 +218,52 @@ header {
   .carousel .carousel-inner button {
     font-size: 14px; }
 
-  .tabs li h3 {
-    font-size: 10px; }
-  .tabs li .hexahedron {
-    height: 40px;
-    width: 70px;
-    position: relative;
-    margin-top: 50px;
-    margin-bottom: 50px; }
-    .tabs li .hexahedron span {
-      color: #fff;
-      font-size: 40px; }
-  .tabs li .hexahedron::before {
-    content: '';
-    position: absolute;
-    top: -19px;
-    left: 0;
-    width: 0;
-    height: 0;
-    border-left: 35px solid transparent;
-    border-right: 35px solid transparent;
-    border-bottom: 20px solid;
-    border-radius: 3px; }
-  .tabs li .hexahedron::after {
-    content: "";
-    position: absolute;
-    bottom: -19px;
-    left: 0;
-    width: 0;
-    height: 0;
-    border-left: 35px solid transparent;
-    border-right: 35px solid transparent;
-    border-top: 20px solid;
-    border-radius: 3px; } }
+  .tabs li {
+    padding-top: 12px; }
+    .tabs li h3 {
+      font-size: 15px; }
+    .tabs li .hexahedron {
+      height: 40px;
+      width: 70px;
+      position: relative;
+      margin-top: 50px;
+      margin-bottom: 50px; }
+      .tabs li .hexahedron span {
+        color: #fff;
+        font-size: 40px; }
+    .tabs li .hexahedron::before {
+      content: '';
+      position: absolute;
+      top: -19px;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-left: 35px solid transparent;
+      border-right: 35px solid transparent;
+      border-bottom: 20px solid;
+      border-radius: 3px; }
+    .tabs li .hexahedron::after {
+      content: "";
+      position: absolute;
+      bottom: -19px;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-left: 35px solid transparent;
+      border-right: 35px solid transparent;
+      border-top: 20px solid;
+      border-radius: 3px; } }
 @media screen and (min-width: 768px) {
+  .tablet {
+    width: 655px;
+    margin: 50px auto;
+    height: 300px;
+    padding-left: 3%;
+    padding-top: 3%; }
+    .tablet img {
+      top: -20px;
+      left: 70px; }
+
   .descript {
     overflow-x: visible;
     white-space: nowrap; }
@@ -286,6 +307,10 @@ header {
     border-left: 70px solid transparent;
     border-right: 70px solid transparent;
     border-top: 40px solid;
-    border-radius: 3px; } }
+    border-radius: 3px; }
+
+  .nav-tabs.active {
+    margin-bottom: -5px;
+    padding-top: 5px; } }
 
 /*# sourceMappingURL=style.css.map */

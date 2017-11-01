@@ -8,10 +8,19 @@
 @font-face {
   font-family: SagoeWPNLight;
   src: url("../font/SegoeWP-Light.ttf") format("truerype"); }
+html {
+  margin: 0 auto; }
+
+body {
+  margin: 0 auto; }
+
 header {
   background: url("../img/bg_header.jpg") no-repeat;
-  max-width: 1366px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  max-width: 1280px;
+  height: 485px;
+  padding-bottom: 50px;
+  overflow: visible; }
   header .navbar-default {
     background: transparent;
     border: none; }
@@ -25,48 +34,48 @@ header {
     margin-top: 55px;
     margin-left: 0; }
   header li {
-    margin-right: 70px;
     font-family: Arial;
     font-size: 1em;
     color: #fff; }
+  header .carousel .carousel-indicators {
+    bottom: -10%; }
   header .carousel .carousel-inner .item img {
+    margin-top: 0;
     margin-left: 10%; }
   header .carousel .carousel-inner .item h1 {
     font-family: SagoeWPNsemiBold;
-    font-size: 3em;
     color: #fff;
-    margin-top: 40px;
+    margin-top: 10%;
     margin-bottom: 0; }
   header .carousel .carousel-inner .item h2 {
     font-family: SagoeWPNLight;
-    font-size: 1.5em;
     color: #fff;
     margin-top: 0; }
   header .carousel .carousel-inner .item button {
     font-family: SagoeWPNLight;
-    font-size: 1em;
     font-weight: 200;
     color: #fff;
     background: #185e3d;
     border: 3px solid rgba(0, 0, 0, 0.5);
     border-radius: 5px;
-    width: 140px;
-    height: 40px; }
+    min-width: 140px;
+    min-height: 40px; }
   header .carousel .carousel-control {
     background: transparent; }
     header .carousel .carousel-control span {
       margin-top: 150px;
-      border: 2px solid rgba(255, 255, 255, 0.7);
+      border: 4px solid rgba(255, 255, 255, 0.7);
       border-radius: 50%;
       font-size: 1.5em;
       width: 40px;
       height: 40px; }
     header .carousel .carousel-control .fa-caret-right {
-      padding-top: 5px;
-      padding-left: 5px; }
+      padding-top: 2px;
+      padding-left: 13px;
+      letter-spacing: 10px; }
     header .carousel .carousel-control .fa-caret-left {
-      padding-top: 5px;
-      padding-left: 5px;
+      padding-top: 1px;
+      padding-left: 7px;
       letter-spacing: 10px; }
 
 .tabs {
@@ -105,6 +114,8 @@ header {
     .tabs .nav-tabs li {
       text-align: center;
       margin-bottom: -1px; }
+      .tabs .nav-tabs li a {
+        padding: 0; }
       .tabs .nav-tabs li .blue {
         background: #6598e6; }
       .tabs .nav-tabs li .blue.hexahedron::before {
@@ -129,35 +140,6 @@ header {
         border-bottom-color: #e67624; }
       .tabs .nav-tabs li .orange.hexahedron::after {
         border-top-color: #e67624; }
-      .tabs .nav-tabs li .hexahedron {
-        height: 80px;
-        width: 140px;
-        position: relative;
-        margin-top: 50px;
-        margin-bottom: 50px; }
-        .tabs .nav-tabs li .hexahedron span {
-          color: #fff;
-          font-size: 80px; }
-      .tabs .nav-tabs li .hexahedron::before {
-        content: '';
-        position: absolute;
-        top: -40px;
-        left: 0;
-        width: 0;
-        height: 0;
-        border-left: 70px solid transparent;
-        border-right: 70px solid transparent;
-        border-bottom: 40px solid; }
-      .tabs .nav-tabs li .hexahedron::after {
-        content: "";
-        position: absolute;
-        bottom: -40px;
-        left: 0;
-        width: 0;
-        height: 0;
-        border-left: 70px solid transparent;
-        border-right: 70px solid transparent;
-        border-top: 40px solid; }
       .tabs .nav-tabs li h3 {
         text-align: center; }
 
@@ -194,5 +176,84 @@ header {
         color: #e67624;
         font-size: 1em;
         margin-right: 10px; }
+
+@media screen and (max-width: 768px) {
+  .carousel .carousel-inner h1 {
+    font-size: 24px; }
+  .carousel .carousel-inner h2 {
+    font-size: 14px; }
+  .carousel .carousel-inner button {
+    font-size: 14px; }
+
+  .tabs li h3 {
+    font-size: 10px; }
+  .tabs li .hexahedron {
+    height: 40px;
+    width: 70px;
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 50px; }
+    .tabs li .hexahedron span {
+      color: #fff;
+      font-size: 40px; }
+  .tabs li .hexahedron::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
+    border-bottom: 20px solid; }
+  .tabs li .hexahedron::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
+    border-top: 20px solid; } }
+@media screen and (min-width: 768px) {
+  .carousel .carousel-inner h1 {
+    font-size: 5em; }
+  .carousel .carousel-inner h2 {
+    font-size: 3em; }
+  .carousel .carousel-inner button {
+    font-size: 1.5em; }
+
+  .hexahedron {
+    height: 80px;
+    width: 140px;
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 50px; }
+    .hexahedron span {
+      color: #fff;
+      font-size: 80px; }
+
+  .hexahedron::before {
+    content: '';
+    position: absolute;
+    top: -39px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 70px solid transparent;
+    border-right: 70px solid transparent;
+    border-bottom: 40px solid; }
+
+  .hexahedron::after {
+    content: "";
+    position: absolute;
+    bottom: -39px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 70px solid transparent;
+    border-right: 70px solid transparent;
+    border-top: 40px solid; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -16,8 +16,10 @@ body {
 
 header {
   background: url("../img/bg_header.jpg") no-repeat;
+  -webkit-background-size: 100% 335%;
+  background-size: 100% 335%;
   margin: 0 auto;
-  max-width: 1280px;
+  max-width: 1366px;
   height: 485px;
   padding-bottom: 50px;
   overflow: visible; }
@@ -26,6 +28,32 @@ header {
     border: none; }
   header .navbar-nav {
     margin-top: 40px; }
+  header .navbar-collapse {
+    margin-top: 20px;
+    position: absolute;
+    right: 0;
+    z-index: 100;
+    width: 100%; }
+    header .navbar-collapse ul {
+      margin-top: 20px;
+      margin-right: 50px; }
+      header .navbar-collapse ul li {
+        font-size: 20px;
+        margin-right: 40px;
+        color: #fff; }
+      header .navbar-collapse ul li:hover {
+        padding: 3px;
+        text-shadow: 0 4px 15px #0b05e7;
+        border-radius: 10px;
+        background: radial-gradient(#0b05e7 30%, transparent); }
+      header .navbar-collapse ul li:active {
+        text-shadow: 0 4px 15px #e24228;
+        padding: 3px;
+        text-shadow: 0 4px 15px #e24228;
+        border-radius: 10px;
+        background: radial-gradient(#e24228 30%, transparent); }
+  header .navbar-header button {
+    margin-top: 50px; }
   header #brand {
     font-family: MrsEavesItalic;
     font-style: italic;
@@ -38,28 +66,29 @@ header {
     font-size: 1em;
     color: #fff; }
   header .carousel .carousel-indicators {
-    bottom: -10%; }
-  header .carousel .carousel-inner .item img {
-    margin-top: 0;
-    margin-left: 10%; }
-  header .carousel .carousel-inner .item h1 {
-    font-family: SagoeWPNsemiBold;
-    color: #fff;
-    margin-top: 10%;
-    margin-bottom: 0; }
-  header .carousel .carousel-inner .item h2 {
-    font-family: SagoeWPNLight;
-    color: #fff;
-    margin-top: 0; }
-  header .carousel .carousel-inner .item button {
-    font-family: SagoeWPNLight;
-    font-weight: 200;
-    color: #fff;
-    background: #185e3d;
-    border: 3px solid rgba(0, 0, 0, 0.5);
-    border-radius: 5px;
-    min-width: 140px;
-    min-height: 40px; }
+    bottom: -33%; }
+  header .carousel .carousel-inner {
+    margin-top: 85px; }
+    header .carousel .carousel-inner .item img {
+      float: right; }
+    header .carousel .carousel-inner .item h1 {
+      font-family: SagoeWPNsemiBold;
+      color: #fff;
+      margin-top: 10%;
+      margin-bottom: 0; }
+    header .carousel .carousel-inner .item h2 {
+      font-family: SagoeWPNLight;
+      color: #fff;
+      margin-top: 0; }
+    header .carousel .carousel-inner .item button {
+      font-family: SagoeWPNLight;
+      font-weight: 200;
+      color: #fff;
+      background: #185e3d;
+      border: 3px solid rgba(0, 0, 0, 0.5);
+      border-radius: 5px;
+      min-width: 140px;
+      min-height: 40px; }
   header .carousel .carousel-control {
     background: transparent; }
     header .carousel .carousel-control span {
@@ -88,7 +117,6 @@ header {
       position: relative;
       height: 350px;
       margin-top: 50px;
-      left: 150px;
       top: 0; }
       .tabs .tab-content .tablet img {
         position: absolute;
@@ -112,6 +140,7 @@ header {
     .tabs .nav-tabs .nav-tabs.active a {
       border-bottom: 5px solid #fff; }
     .tabs .nav-tabs li {
+      box-sizing: border-box;
       text-align: center;
       margin-bottom: -1px; }
       .tabs .nav-tabs li a {
@@ -149,16 +178,14 @@ header {
 .whychoose {
   padding-top: 50px; }
   .whychoose .browser {
-    position: relative;
-    height: 450px; }
+    background: url("../img/browser.png") no-repeat;
+    background-size: 100% 100%;
+    height: 265px; }
     .whychoose .browser img {
-      position: absolute;
-      left: 0;
-      top: 0; }
-    .whychoose .browser img + img {
-      position: absolute;
-      left: 18px;
-      top: 70px; }
+      margin-top: 15%;
+      margin-left: 0;
+      height: 75%;
+      width: 100%; }
   .whychoose .descript ul {
     list-style-position: inside;
     list-style: none;
@@ -196,23 +223,25 @@ header {
   .tabs li .hexahedron::before {
     content: '';
     position: absolute;
-    top: -20px;
+    top: -19px;
     left: 0;
     width: 0;
     height: 0;
     border-left: 35px solid transparent;
     border-right: 35px solid transparent;
-    border-bottom: 20px solid; }
+    border-bottom: 20px solid;
+    border-radius: 3px; }
   .tabs li .hexahedron::after {
     content: "";
     position: absolute;
-    bottom: -20px;
+    bottom: -19px;
     left: 0;
     width: 0;
     height: 0;
     border-left: 35px solid transparent;
     border-right: 35px solid transparent;
-    border-top: 20px solid; } }
+    border-top: 20px solid;
+    border-radius: 3px; } }
 @media screen and (min-width: 768px) {
   .descript {
     overflow-x: visible;
@@ -238,23 +267,25 @@ header {
   .hexahedron::before {
     content: '';
     position: absolute;
-    top: -39px;
+    top: -40px;
     left: 0;
     width: 0;
     height: 0;
     border-left: 70px solid transparent;
     border-right: 70px solid transparent;
-    border-bottom: 40px solid; }
+    border-bottom: 40px solid;
+    border-radius: 3px; }
 
   .hexahedron::after {
     content: "";
     position: absolute;
-    bottom: -39px;
+    bottom: -40px;
     left: 0;
     width: 0;
     height: 0;
     border-left: 70px solid transparent;
     border-right: 70px solid transparent;
-    border-top: 40px solid; } }
+    border-top: 40px solid;
+    border-radius: 3px; } }
 
 /*# sourceMappingURL=style.css.map */

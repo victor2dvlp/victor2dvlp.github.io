@@ -20,8 +20,10 @@ body {
 
 header {
 	background: url('../img/bg_header.jpg') no-repeat;
+	-webkit-background-size: 100% 335%;
+	background-size: 100% 335%;
 	margin: 0 auto;
-	max-width: 1280px;
+	max-width: 1366px;
 	height: 485px;
 	padding-bottom: 50px;
 	overflow: visible;
@@ -32,6 +34,43 @@ header {
 	}
 	.navbar-nav {
 		margin-top: 40px;
+	}
+	
+	.navbar-collapse {
+		margin-top: 20px;
+		position: absolute;
+		right: 0;
+		z-index: 100;
+		width: 100%;
+		ul {
+			margin-top: 20px;
+			margin-right: 50px;
+			//background: #ccc;
+			li {
+				font-size: 20px;
+				margin-right: 40px;
+				color: #fff;
+
+			}
+			li:hover {
+				padding: 3px;
+				text-shadow: 0 4px 15px #0b05e7;
+				border-radius: 10px;
+				background: radial-gradient(#0b05e7 30%, transparent);
+			}
+			li:active {
+				text-shadow: 0 4px 15px #e24228;
+				padding: 3px;
+				text-shadow: 0 4px 15px #e24228;
+				border-radius: 10px;
+				background: radial-gradient(#e24228 30%, transparent);
+			}
+		}
+	}
+	.navbar-header {
+		button {
+			margin-top: 50px;
+		}
 	}
 	#brand {
 		font-family: MrsEavesItalic;
@@ -49,13 +88,13 @@ header {
 
 	.carousel {
 		.carousel-indicators {
-			bottom: -10%;
+			bottom: -33%;
 		}
 		.carousel-inner {
+			margin-top: 85px;
 				.item{
 					img {
-						margin-top: 0;
-						margin-left: 10%;
+						float: right;
 					}
 					h1 {
 						font-family: SagoeWPNsemiBold;
@@ -121,7 +160,6 @@ header {
 			position: relative;
 			height: 350px;
 			margin-top: 50px;
-			left: 150px;
 			top: 0;
 			img {
 				position: absolute;
@@ -155,6 +193,7 @@ header {
 		}
 		
 		li {
+			box-sizing: border-box;
 			a {
 				padding: 0;
 			}
@@ -214,17 +253,15 @@ header {
 .whychoose {
 	padding-top: 50px;
 	.browser{
-		position: relative;
-		height: 450px;
-		img{
-			position: absolute;
-			left: 0;
-			top: 0;
-		}
-		img + img {
-			position: absolute;
-			left: 18px;
-			top: 70px;
+		background: url('../img/browser.png') no-repeat;
+		background-size: 100% 100%;
+		height: 265px;
+
+		img {
+			margin-top: 15%;
+			margin-left: 0;
+			height: 75%;
+			width: 100%;
 		}
 	}
 	.descript {
@@ -288,24 +325,26 @@ header {
 			.hexahedron::before {
 				content: '';
 				position: absolute;
-				top: -20px;
+				top: -19px;
 				left: 0;
 				width: 0;
 				height: 0;
 				border-left: 35px solid transparent;
 				border-right: 35px solid transparent;
 				border-bottom: 20px solid;
+				border-radius: 3px;
 			}
 			.hexahedron::after {
 				content: "";
 				position: absolute;
-				bottom: -20px;
+				bottom: -19px;
 				left: 0;
 				width: 0;
 				height: 0;
 				border-left: 35px solid transparent;
 				border-right: 35px solid transparent;
 				border-top: 20px solid;
+				border-radius: 3px;
 			}
 		}
 	}
@@ -345,24 +384,26 @@ header {
 			.hexahedron::before {
 				content: '';
 				position: absolute;
-				top: -39px;
+				top: -40px;
 				left: 0;
 				width: 0;
 				height: 0;
 				border-left: 70px solid transparent;
 				border-right: 70px solid transparent;
 				border-bottom: 40px solid;
+				border-radius: 3px;
 			}
 			.hexahedron::after {
 				content: "";
 				position: absolute;
-				bottom: -39px;
+				bottom: -40px;
 				left: 0;
 				width: 0;
 				height: 0;
 				border-left: 70px solid transparent;
 				border-right: 70px solid transparent;
 				border-top: 40px solid;
+				border-radius: 3px;
 
 			}
 }

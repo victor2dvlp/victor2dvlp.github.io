@@ -228,8 +228,7 @@ header {
 		}
 	}
 	.descript {
-		overflow-x: visible;
-		white-space: nowrap;
+		
 		ul{
 
 			list-style-position: inside;
@@ -252,7 +251,10 @@ header {
 
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1200px){
+	.descript {
+
+	}
 	.carousel {
 				.carousel-inner{
 					h1 {
@@ -309,10 +311,12 @@ header {
 	}
 	
 }
-@media screen and (max-width: 992px){
-	
-}
+
 @media screen and (min-width: 768px){
+			.descript {
+				overflow-x: visible;
+				white-space: nowrap;
+			}
 			.carousel {
 				.carousel-inner{
 					h1 {

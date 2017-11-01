@@ -159,25 +159,22 @@ header {
       position: absolute;
       left: 18px;
       top: 70px; }
-  .whychoose .descript {
-    overflow-x: visible;
-    white-space: nowrap; }
-    .whychoose .descript ul {
-      list-style-position: inside;
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      font-size: 1.5em; }
-      .whychoose .descript ul li {
-        margin-top: .3em; }
-      .whychoose .descript ul li::before {
-        content: '\f058';
-        font-family: FontAwesome;
-        color: #e67624;
-        font-size: 1em;
-        margin-right: 10px; }
+  .whychoose .descript ul {
+    list-style-position: inside;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1.5em; }
+    .whychoose .descript ul li {
+      margin-top: .3em; }
+    .whychoose .descript ul li::before {
+      content: '\f058';
+      font-family: FontAwesome;
+      color: #e67624;
+      font-size: 1em;
+      margin-right: 10px; }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .carousel .carousel-inner h1 {
     font-size: 24px; }
   .carousel .carousel-inner h2 {
@@ -217,6 +214,10 @@ header {
     border-right: 35px solid transparent;
     border-top: 20px solid; } }
 @media screen and (min-width: 768px) {
+  .descript {
+    overflow-x: visible;
+    white-space: nowrap; }
+
   .carousel .carousel-inner h1 {
     font-size: 5em; }
   .carousel .carousel-inner h2 {

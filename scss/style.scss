@@ -161,8 +161,8 @@ header {
 		.tablet {
 			position: relative;
 			background: url('../img/device.png') no-repeat;
-			-webkit-background-size: 104% 112%;
-			background-size: 104% 112%;
+			-webkit-background-size: 70% 80%;
+			background-size: 70% 80%;
 			background-position: center;
 			img {
 				position: absolute;
@@ -242,6 +242,7 @@ header {
 }
 
 .whychoose {
+	padding-bottom: 66px;
 	padding-top: 50px;
 	.browser{
 		background: url('../img/browser.png') no-repeat;
@@ -278,6 +279,66 @@ header {
 	}
 
 }
+hr {
+	height: 1px;
+
+}
+.forms {
+	.row{
+		margin-top: 25px;
+		margin-bottom: 25px;
+		.member, .subscribe {
+			background: #e67624;
+			margin-top: 25px;
+			margin-bottom: 35px;
+			padding-left: 30px;
+			padding-top: 20px;
+			padding-bottom: 20px;
+			border-radius: 5px;
+			h3 {
+				color: #fff;
+				font-size: 28px;
+				font-weight: 1px;
+				margin-top: 10px;
+			}
+			form {
+				padding-left: 0;
+				input {
+					padding-right: 0;
+					padding-left: 15px;
+					border: 0;
+					border-radius: 0;
+				}
+				button {
+					padding: 8px 12px 6px 12px;
+					display: inline-block;
+					height: 34px;
+					background-color: #444444;
+					border: none;
+					color: #fff;
+				}
+			}
+		}
+		.subscribe {
+			background: #01d4f3;
+			form {
+				width: auto;
+				input {
+					max-width: 500px;
+				}
+				button {
+					background: #029bb1;
+					float: right;
+					margin-right: 15px;
+				}
+			}
+		}
+	}
+}
+footer {
+	color: #fff;
+	background: #2e2e29;
+}
 
 @media screen and (max-width: 768px){
 	.nav-tabs.active{
@@ -285,14 +346,14 @@ header {
 			padding-top: 12px;
 		}
 	.tablet {
-			height: 115px;
-			width: 300px;
+			height: 80px;
+			width: 220px;
 			margin: 50px auto;
 			padding-left: 3%;
 			padding-top: 3%;
 			img {
-				height: 80px;
-				width: 250px;
+				height: 40px;
+				width: 120px;
 				top: -10px;
 				left: 25px;
 			}

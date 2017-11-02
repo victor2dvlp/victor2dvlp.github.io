@@ -118,8 +118,8 @@ header {
     .tabs .tab-content .tablet {
       position: relative;
       background: url("../img/device.png") no-repeat;
-      -webkit-background-size: 104% 112%;
-      background-size: 104% 112%;
+      -webkit-background-size: 70% 80%;
+      background-size: 70% 80%;
       background-position: center; }
       .tabs .tab-content .tablet img {
         position: absolute; }
@@ -169,6 +169,7 @@ header {
   padding: 30px 50px 30px 50px; }
 
 .whychoose {
+  padding-bottom: 66px;
   padding-top: 50px; }
   .whychoose .browser {
     background: url("../img/browser.png") no-repeat;
@@ -194,20 +195,68 @@ header {
       font-size: 1em;
       margin-right: 10px; }
 
+hr {
+  height: 1px; }
+
+.forms .row {
+  margin-top: 25px;
+  margin-bottom: 25px; }
+  .forms .row .member, .forms .row .subscribe {
+    background: #e67624;
+    margin-top: 25px;
+    margin-bottom: 35px;
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 5px; }
+    .forms .row .member h3, .forms .row .subscribe h3 {
+      color: #fff;
+      font-size: 28px;
+      font-weight: 1px;
+      margin-top: 10px; }
+    .forms .row .member form, .forms .row .subscribe form {
+      padding-left: 0; }
+      .forms .row .member form input, .forms .row .subscribe form input {
+        padding-right: 0;
+        padding-left: 15px;
+        border: 0;
+        border-radius: 0; }
+      .forms .row .member form button, .forms .row .subscribe form button {
+        padding: 8px 12px 6px 12px;
+        display: inline-block;
+        height: 34px;
+        background-color: #444444;
+        border: none;
+        color: #fff; }
+  .forms .row .subscribe {
+    background: #01d4f3; }
+    .forms .row .subscribe form {
+      width: auto; }
+      .forms .row .subscribe form input {
+        max-width: 500px; }
+      .forms .row .subscribe form button {
+        background: #029bb1;
+        float: right;
+        margin-right: 15px; }
+
+footer {
+  color: #fff;
+  background: #2e2e29; }
+
 @media screen and (max-width: 768px) {
   .nav-tabs.active {
     margin-bottom: -5px;
     padding-top: 12px; }
 
   .tablet {
-    height: 115px;
-    width: 300px;
+    height: 80px;
+    width: 220px;
     margin: 50px auto;
     padding-left: 3%;
     padding-top: 3%; }
     .tablet img {
-      height: 80px;
-      width: 250px;
+      height: 40px;
+      width: 120px;
       top: -10px;
       left: 25px; }
 

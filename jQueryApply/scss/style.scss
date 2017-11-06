@@ -1,0 +1,154 @@
+html {
+	font-size: 14px;
+}
+
+header {
+	position: relative;
+	top: 0;
+	left: 0;
+	background: url(../img/bg-header.jpg) no-repeat center center;
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+	height: 655px;
+	.navbar.navbar-default {
+		background: transparent;
+		border: none;
+		padding-top: 30px;
+		.navbar-brand {
+			font-family: 'SalamanderScriptBold';
+			color: #f28c2a;
+			font-size: 5rem;
+			font-style: italic;
+			text-shadow: 0 0 10px #1fbbf1;
+		}
+		.navbar-header {
+			
+		}
+		.collapse {
+
+			ul {
+				li {
+					font-family: v_KomikaAxis;
+					font-size: 1rem;
+					color: #fff;
+					a {
+						color: #fff;
+						text-decoration: none;
+					}
+					a::hover {
+						color: red;
+					}
+				}
+				li::hover {
+					color: red;
+				}
+			}
+		}
+	}
+	h1 {
+		font-family: RalewayRegular;
+		font-size: 5rem;
+		color: #fff;
+		padding-top: 20%;
+		text-shadow: 0 3px 10px #fff;
+	}
+	h2 {
+		font-family: Rotonda-Bold;
+		font-size: 3rem;
+		color: #fff;
+		text-transform: uppercase;
+		display: inline-block;
+		border-radius: 5px;
+		margin: 0;
+		padding: 10px 20px 5px 20px;
+		background: rgba(#90a0e4, .5);
+		z-index: 1;
+	}
+	button {
+		margin-top: 30px;
+		border-radius: 50%;
+		height: 60px;
+		width: 60px;
+		background: #fff;
+		border: none;
+		outline: none;
+		box-shadow: 0 0 10px 1px #fff;
+		span.fa.fa-chevron-down {
+			font-size: 2rem;
+			color: #000;
+			text-align: center;
+		}
+	}
+	button:hover {
+		box-shadow: inset 0 0 10px 10px #000;
+
+	}
+
+}
+.about {
+	padding: 50px 0;
+	h3 {
+		font-family: v_KomikaAxis;
+		margin-bottom: 30px;
+		font-size: 4rem;	
+	}
+	h4 {
+		padding-top: 30px;
+		font-family: RalewayRegular;
+		font-size: 3rem;
+	}
+	p {
+		font-family: Verdana;
+		font-size: 1.5rem;
+		color: #000;
+	}
+	img {
+		width: 100%;
+		box-shadow: 5px 10px 30px #000;
+	}
+	.wraper {
+		margin: 30px 0;
+	}
+}
+
+.skills {
+	background: #111;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	margin-bottom: 100px;
+	.my-progress-bar-1,
+	.my-progress-bar-2,
+	.my-progress-bar-3,
+	.my-progress-bar-4 {
+		position: relative;
+		margin: 0 auto;
+		height: 200px;
+	
+		.progress-percentage {
+			position: absolute;
+			top: 65px;
+			left: 65px;
+			font-family: v_KomikaAxis;
+			color: red;
+			font-size: 40px;
+
+		}
+		canvas {
+			position: absolute;
+			top: 0;
+			left: 0;
+
+		}
+	}
+	h2 {
+		font-family: Rotonda-Bold;
+		font-size: 2rem;
+		color: #fff;
+		transition: all 1s;
+	}
+	h1 {
+		font-family: v_KomikaAxis;
+		color: #fff;
+	}
+
+}

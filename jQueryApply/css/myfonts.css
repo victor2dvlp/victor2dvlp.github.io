@@ -1,0 +1,24 @@
+@font-face {
+	font-family: 'RalewayRegular';
+	font-style: normal;
+	font-weight: lighter;
+	src: url("../fonts/RalewayRegular.ttf") format("truetype");
+}
+@font-face {
+	font-family: 'SalamanderScriptBold';
+	font-style: normal;
+	font-weight: bold;
+	src: url("../fonts/SalamanderScriptBold.otf") format("opentype");
+}
+@font-face {
+	font-family: 'v_KomikaAxis';
+	font-style: normal;
+	font-weight: lighter;
+	src: url("../fonts/v_KomikaAxis.ttf") format("truetype");
+}
+@font-face {
+	font-family: 'Rotonda-Bold';
+	font-style: normal;
+	font-weight: bold;
+	src: url("../fonts/Rotonda-bold.ttf") format("truetype");
+}

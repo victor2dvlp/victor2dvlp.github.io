@@ -63,9 +63,7 @@
             $(this).append(createCanvas($(this)));
 
             // Return allows for chaining
-            this.percent = settings.percent;
             return this;
-
         },
         percent : function(value) {
             // Change percent
@@ -84,7 +82,6 @@
             return this;
         },
         animate : function(value, time) {
-
             // Apply global_settings
             $(this).css({
                 "height": global_settings.height,
@@ -95,36 +92,9 @@
             var num_of_steps = time / 10;
             // Amount of change each step
             var percent_change = (value - global_settings.percent) / num_of_steps;
-//======= my code ======================================================
-            var perscent_change_my = (value - this.percent) / num_of_steps;
-            var myValue = value;        
-//======================================================================
+
             // Variable conflict, rename this
             var scope = $(this);
-            scope.percent = this.percent;
-            $(this).append( $(".mytest") );
-
-
-
-//======= my code ======================================================
-            var myTheInterval = setInterval(function() {
-                
-                if(scope.percent < myValue) {
-                    // Remove old canvas
-                    // Increment percent
-
-                    scope.percent += perscent_change_my;
-                    insertText(scope);
-
-                    // Put canvas inside this
-                } else {
-                         
-
-                    clearInterval(myTheInterval);
-                }
-            }, 10);
-            
-//======================================================================
             var theInterval = setInterval(function() {
                 if(global_settings.percent < value) {
                     // Remove old canvas
@@ -189,14 +159,10 @@
     };
     // Put percentage or custom text inside progress circle
     function insertText(scope) {
-        //$(".progress-percentage").text(Math.round(scope.percent) + "%");
-        scope.children(".progress-percentage").text(Math.round(scope.percent) + "%");
-
-        //scope.elem.text(Math.round(scope.percent) + "%");
+        scope.children(".progress-percentage").text(Math.round(global_settings.percent) + "%");
     }
     // create canvas
     function createCanvas(scope) {
-
         // Remove 'px' or '%'
         var canvas_height = removeUnit(global_settings.height.toString());
         var canvas_width = removeUnit(global_settings.width.toString());
@@ -240,9 +206,9 @@
         ctx.stroke();
 
         // Add text
-      //  if(global_settings.percentage) {
-      //      insertText(scope);
-      //  }
+        if(global_settings.percentage) {
+            insertText(scope);
+        }
 
         return canvas;
     };

@@ -6,6 +6,7 @@
 	<title>jQuery practics</title>
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/myfonts.css">
 	<link rel="stylesheet" href="css/mediarequest.css">
 	<link rel="stylesheet" href="css/style.css">
@@ -17,7 +18,9 @@
 	<div class="navbar navbar-default">
 		<div class="container">
 			<div class="row">
-				<a href="#" class="navbar-brand">jQuery</a>
+				<a href="#" class="navbar-brand wow fadeInLeftBig shake" data-wow-duration=".5s" data-wow-delay="2s">
+					jQuery
+				</a>
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#responsive-menu">
 						<span class="icon-bar"></span>
@@ -26,7 +29,7 @@
 					</button>
 				</div>
 				<div class="collapse navbar-collapse navbar-right" id="responsive-menu">
-					<ul class="nav navbar-nav">
+					<ul class="nav navbar-nav wow fadeInRight" data-wow-duration="1s" data-wow-delay="2s">
 						<li><a href="#">Home</a></li>
 						<li><a href="#">About</a></li>
 						<li><a href="#">Contacts</a></li>
@@ -40,7 +43,7 @@
 		<div class="row">
 			<h1 class="text-center">Welcome to amazing world</h1>
 			<div class="text-center">
-				<h2>Lets open it togather</h2>
+				<h2 class="wow zoomIn" data-wow-duration=".5s" data-wow-delay="1s">Lets open it togather</h2>
 			</div>
 			<button class="center-block"><span class="fa fa-chevron-down"></span></button>
 			
@@ -48,27 +51,27 @@
 	</div>
 	
 </header>
-<div class="container about">
+<div class="container about wow fadeIn" data-wow-duration="1.5s" data-wow-offset="150">
 	<h3 class="text-center">About project</h3>
 	<div class="row">
 
 		<div class="row wraper">
-			<div class="col-md-6">
+			<div class="col-xs-12 col-md-6 col-md-push-6 wow fadeInRight" data-wow-duration="1.5s" data-wow-offset="300">
+				<img src="img/nature.jpg" alt="" >
+			</div>
+			<div class="col-xs-12 col-md-6 col-md-pull-6 wow fadeInLeft" data-wow-duration="1.5s" data-wow-offset="300">
 				<h4 class="text-center">Summer Update</h4>
 				<p>
 	As the door closed behind me I felt a rush of warm salty wind pour across the marsh now lit by the morning’s photic frontrunners. As I stood on the top stair down to the beach, I could barely see the wetted edge where the mussel beds met the eel grass, but I knew where...</p>
 				<span>antihype!!!</span>
 			</div>
-			<div class="col-md-6">
-				<img src="img/nature.jpg" alt="">
-			</div>
 		</div>
 		
 		<div class="row wraper">
-			<div class="col-md-6">
+			<div class="col-xs-12 col-md-6 wow fadeInLeft" data-wow-duration="1.5s" data-wow-offset="200">
 				<img src="img/nature-1.jpg" alt="">
 			</div>
-			<div class="col-md-6">
+			<div class="col-xs-12 col-md-6 wow fadeInRight" data-wow-duration="1.5s" data-wow-offset="200">
 				<h4 class="text-center">The Nature Project is LIVE!</h4>
 				<p>
 	This summer The Nature Project kicked off their introduction to the outdoor education community with a Seattle event and fundraiser hosted by IslandWood, an award winning leader in outdoor education celebrated for creating transformative outdoor experiences for underse...</p>
@@ -77,27 +80,27 @@
 		</div>
 
 		<div class="row wraper">
-			<div class="col-md-6">
+			<div class="col-xs-12 col-md-6 col-md-push-6 wow fadeInRight" data-wow-duration="1.5s" data-wow-offset="200">
+				<img src="img/nature-2.jpg" alt="">
+			</div>
+			<div class="col-xs-12 col-md-6 col-md-pull-6 wow fadeInLeft" data-wow-duration="1.5s" data-wow-offset="200">
 				<h4 class="text-center">Our First Event</h4>
 				<p>
 	How can I describe my experience from our first event as The Nature Project? The radiant smiles spread across the faces of 160 boys and girls spending their first days in the outdoors gave me an overwhelming feeling of gratitude for getting to share those moments with...
 				</p>
 				<span></span>
 			</div>
-			<div class="col-md-6">
-				<img src="img/nature-2.jpg" alt="">
-			</div>
 		</div>
 		
 		<div class="row wraper">
-			<div class="col-md-6">
+			<div class="col-xs-12 col-md-6 wow fadeInLeft" data-wow-duration="1.5s" data-wow-offset="200">
 				<img src="img/nature-3.jpg" alt="">
 			</div>
-			<div class="col-md-6">
+			<div class="col-xs-12 col-md-6 wow fadeInRight" data-wow-duration="1.5s" data-wow-offset="200">
 				<h4 class="text-center">Recent Posts</h4>
 				<p>
 	While tirelessly working alongside TNP co-founder, Charles Post, and The Nature Project Team to accomplish our goal to create transformative experiences in nature for underserved youth, I found myself brimming with joy as I watched 160 kids planted in nature as they climbed trees, ate stinging nettle, saw owls and bald eagles for the first time – all within a few hours of their home communities. </p>
-				<span>antihype!!!</span>
+				<span></span>
 			</div>
 		</div>
 
@@ -107,19 +110,19 @@
 	<div class="container">
 		<div class="row">
 			<h1 class="text-center">Directions</h3>
-			<div class="col-md-3">
+			<div class="col-xs-12 col-md-3">
 				<div class="my-progress-bar-1"></div>
 				<h2 class="text-center">Making it better</h2>
 			</div>
-			<div class="col-md-3">
+			<div class="col-xs-12 col-md-3">
 				<div class="my-progress-bar-2"></div>
 				<h2 class="text-center">Motivation</h2>
 			</div>
-			<div class="col-md-3">
+			<div class="col-xs-12 col-md-3">
 				<div class="my-progress-bar-3"></div>
 				<h2 class="text-center">Results</h2>
 			</div>
-			<div class="col-md-3">
+			<div class="col-xs-12 col-md-3">
 				<div class="my-progress-bar-4"></div>
 				<h2 class="text-center">Ready</h2>
 			</div>
@@ -130,5 +133,7 @@
 	<script src="js/bootstrap.js"></script>
 	<script src="js/plugin.js"></script>
 	<script src="js/common.js"></script>
+	<script src = "js/wow.min.js"></script>
+	<script> new WOW().init();</script>
 </body>
 </html>

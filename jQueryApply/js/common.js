@@ -67,5 +67,20 @@ $(document).ready(function(){
 			i4 = 1;
 		}
 	});
+
+//-------------------------------menu walking------------------------------------------------
+	$('a[href^="#"]').click(function(){
+		console.log('this: ' + $(this).attr('href') );
+		console.log('this.attr: ' );
+		var elementClick = $(this).attr('href');
+		var destination = $(elementClick).offset().top;
+
+	
+			$('html').animate( {scrollTop: destination}, 1000 );
+		
+		return false;
+	});
+//-------------------------------------------------------------------------------------------
+
 });
 

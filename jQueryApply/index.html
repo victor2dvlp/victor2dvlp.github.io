@@ -10,11 +10,9 @@
 	<link rel="stylesheet" href="css/myfonts.css">
 	<link rel="stylesheet" href="css/mediarequest.css">
 	<link rel="stylesheet" href="css/style.css">
-	
-
 </head>
 <body>
-<header>
+<header name = "home" id = "home">
 	<div class="navbar navbar-default">
 		<div class="container">
 			<div class="row">
@@ -29,11 +27,13 @@
 					</button>
 				</div>
 				<div class="collapse navbar-collapse navbar-right" id="responsive-menu">
-					<ul class="nav navbar-nav wow fadeInRight" data-wow-duration="1s" data-wow-delay="2s">
-						<li><a href="#">Home</a></li>
-						<li><a href="#">About</a></li>
-						<li><a href="#">Contacts</a></li>
-						<li><a href="#">Customers</a></li>
+					<ul class="nav navbar-nav">
+						<li><a href="#home">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#skills">Skills</a></li>
+						<li><a href="#whatdo">activity</a></li>
+						<li><a href="#footer">Info</a></li>
+						
 					</ul>
 				</div>
 			</div>
@@ -45,13 +45,13 @@
 			<div class="text-center">
 				<h2 class="wow zoomIn" data-wow-duration=".5s" data-wow-delay="1s">Lets open it togather</h2>
 			</div>
-			<button class="center-block"><span class="fa fa-chevron-down"></span></button>
+			<button class="header-btn center-block"><span class="fa fa-chevron-down"></span></button>
 			
 		</div>
 	</div>
 	
 </header>
-<div class="container about wow fadeIn" data-wow-duration="1.5s" data-wow-offset="150">
+<div class="container about wow fadeIn" name = "about" id = "about" data-wow-duration="1.5s" data-wow-offset="150">
 	<h3 class="text-center">About project</h3>
 	<div class="row">
 
@@ -106,7 +106,7 @@
 
 	</div>
 </div>
-<div class="skills">
+<div class="skills" id="skills" name = "skills">
 	<div class="container">
 		<div class="row">
 			<h1 class="text-center">Directions</h3>
@@ -129,7 +129,7 @@
 		</div>
 	</div>
 </div>
-<div class="container whatdo">
+<div class="container whatdo" id="whatdo" name = "whatdo">
 	<div class="row">
 		<h1 class="text-center">What i do</h1>
 		<hr class="text-center">
@@ -170,7 +170,7 @@
 		
 	</div>
 </div>
-<footer>
+<footer name = "footer" id="footer">
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12 col-md-4">

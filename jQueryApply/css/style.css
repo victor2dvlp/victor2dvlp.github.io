@@ -1,6 +1,30 @@
 html {
   font-size: 14px; }
 
+#float {
+  position: fixed;
+  right: 50px;
+  top: 50px;
+  background: #fff;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 0 15px #000;
+  z-index: 10;
+  outline: 0;
+  transition: all 0.3s ease-out; }
+  #float span {
+    font-size: 35px;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+    color: #000; }
+
+#float:hover {
+  animation: circColor .5s;
+  background: #30d7e6;
+  transform: scale(1.2);
+  transition: all 0.7s ease-out; }
+
 header {
   position: relative;
   top: 0;
@@ -8,7 +32,7 @@ header {
   background: url(../img/bg-header.jpg) no-repeat center center;
   -webkit-background-size: 100% 100%;
   background-size: 100% 100%;
-  height: 655px; }
+  height: 100vh; }
   header .navbar.navbar-default {
     background: transparent;
     border: none;
@@ -70,7 +94,7 @@ header {
     animation: circColor .5s;
     background: #30d7e6;
     transform: scale(1.2);
-    transition: transform 0.4s; }
+    transition: all 0.4s; }
 
 .about {
   padding: 50px 0; }

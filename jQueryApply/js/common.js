@@ -1,6 +1,45 @@
 $(document).ready(function(){
-	
+	if( $('.about')[0].getBoundingClientRect().top > 50){
+		$("#float").css({'transform': 'scale(0)', 'transition': 'none'});
+	}
+	else {
+		$("#float").css({'transform': 'scale(1)', 'transition': 'transform 0.4s ease-in'});
+		setTimeout(function(){
+			$("#float").removeAttr('style');
+		}, 400);
+	}
+	$('#float').on('click', function(){
 
+		var destination = $('#home').offset().top;
+
+		$('html').animate( {scrollTop: destination}, 1000 );
+
+		$(this).css({'transform': 'scale(1)', 'transition': 'transform 0.4s ease-in'});
+		var temp = $(this);
+		setTimeout(function(){
+			temp.css({'transform': 'scale(1)', 'transition': 'transform 0.2s ease-out'});
+			setTimeout(function(){
+				temp.removeAttr('style');
+				$("#float").css({'transform': 'scale(0)', 'transition': 'transform 0.2s ease-in'});
+			}, 200);
+		}, 300);
+		
+
+	});
+
+$(window).scroll(function(){
+	console.log( "offset top: " + $('.about')[0].getBoundingClientRect().top );
+	if( $('.about')[0].getBoundingClientRect().top < 50){
+		$("#float").css({'transform': 'scale(1)', 'transition': 'transform 0.4s ease-in'});
+		setTimeout(function(){
+			$("#float").removeAttr('style');
+		}, 200);
+	}
+	else {
+		$("#float").css({'transform': 'scale(0)', 'transition': 'transform 0.2s ease-in'});
+		
+	}
+});
 	var progress_circle_1 = $('.my-progress-bar-1');
 	var progress_circle_2 = $('.my-progress-bar-2');
 	var progress_circle_3 = $('.my-progress-bar-3');

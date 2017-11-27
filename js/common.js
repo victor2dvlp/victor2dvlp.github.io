@@ -42,7 +42,7 @@ $( '.next' ).click(function(){
 	} );
 
 	$('.easy-carousel .owl-carousel').owlCarousel({
-		loop: true,
+		loop: false,
 		center: true,
 		margin: 50,
 		stagePadding: 30,

@@ -2,314 +2,264 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
-
-	 <link rel="shortcut icon" href="img/java.ico" type="image/x-icon">
-	<title>Leo/-</title>
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="libs/OwlCarousel2-2.2.1/dist/assets/owl.carousel.min.css">
+	<title>Victor Sapozhnyk</title>
+    <link rel="shortcut icon" href="img/logo_my.png" type="image/x-icon">
+	<link rel="stylesheet" href="css/libs.min.css">
 	<link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Permanent+Marker|Righteous|Amaranth|Boogaloo|Ubuntu" rel="stylesheet">
+    <script src="https://use.fontawesome.com/e6d88260b9.js"></script>
 </head>
 <body>
-<header>
-	<div class="navbar navbar-default ">
-		<div class="container">
-			<div class="row">
-				<a href="#" class="navbar-brand" id="brand">Leo/-</a>
-			
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#responsive-menu">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-				</div>
-				<div class="collapse navbar-collapse navbar-right" id="responsive-menu">
-					<ul class="nav navbar-nav navbar-right navbar-static-top">
-						<li>Solutions</li>
-						<li>Products</li>
-						<li>Portfolio</li>
-						<li>Contact</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="carousel slide" id="carousel">
-		<ol class="carousel-indicators">
-			<li class="active" data-target="#carousel" data-slide-to="0"></li>
-			<li data-target="#carousel" data-slide-to="1"></li>
-			<li data-target="#carousel" data-slide-to="2"></li>
-		</ol>
-		
-		<div class="carousel-inner">
-			<div class="item active">
-				<div class="col-xs-6">
-					<img src="img/coffe.png" class="img-responsive" alt="coffee">
-				</div>
-				<div class="col-xs-6">
-					<h1>Introducing</h1>
-					<h2>Something hot...</h2>
-					<button type="button">Try demo</button>
-				</div>
-			</div>
-			<div class="item">
-				<div class="col-xs-5">
-					<img src="img/coffe.png" class="img-responsive" alt="coffe">
-				</div>
-				<div class="col-xs-7">
-					<h1>Introducing</h1>
-					<h2>Something hot...</h2>
-					<button type="button">Try demo</button>
-				</div>
-			</div>
-			<div class="item">
-				<div class="col-xs-5">
-					<img src="img/coffe.png" class="img-responsive" alt="coffe">
-				</div>
-				<div class="col-xs-7">
-					<h1>Introducing</h1>
-					<h2>Something hot...</h2>
-					<button type="button">Try demo</button>
-				</div>
-			</div>
-		</div>
-		<a href="#carousel" class="left carousel-control" data-slide="prev">
-			<span class="fa fa-caret-left"></span>
-		</a>
-		<a href="#carousel" class="right carousel-control" data-slide="next">
-			<span class="fa fa-caret-right"></span>
-		</a>
-	</div>
-</header>
+<div class="homepage-hero-module" id="home">
+    <div class="video-container">
+        <div class="filter">
+        	<h1 class='header-title'>Hello!</h1>
+            <h2 class="text-center">I'm Victor Sapozhnyk</h2>
+        	<p>web developer</p>
+            <button class="center-block" id="review">review<span class="fa fa-arrow-right"></span></button>
+        </div>
+        <video autoplay loop class="fillWidth">
+            <source src="video/Love-Coding.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+            <source src="video/Love-Coding.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
+            <source src="video/Love-Coding.ogv" type="video/ogv" />Your browser does not support the video tag. I suggest you upgrade your browser.
+        </video>
+        <div class="poster hidden">
+            <img src="video/Love-Coding.jpg" alt="">
+        </div>
+    </div>
+</div>
+<div class="mynavbar">
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li> <a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#work">Activity</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contacts">Contacts</a></li>
+    </ul>
+    <div class="respmenu">
+        <div class="respmenu-item">
+            <span class="fa fa-home" href="#home"></span>
+        </div>
+        <div class="respmenu-item">
+            <span class="fa fa-user" href="#about"></span>
+        </div>
+        <div class="respmenu-item">
+            <span class="fa fa-suitcase" href="#skills"></span>
+        </div>
+        <div class="respmenu-item">
+            <span class="fa fa-gears" href="#work"></span>
+        </div>
+        <div class="respmenu-item">
+            <span class="fa fa-tv" href="#portfolio"></span>
+        </div>
+        <div class="respmenu-item">
+            <span class="fa fa-info-circle" href="#contacts"></span>
+        </div>
+    </div>
+</div>
+<div class="whoami" id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-6">
+                <img class="image-responsive center-block" src="img/self-foto.png" alt="myphoto">
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <h2 class="text-center">My name is <span>Victor Sapozhnyk</span></h2>
+                <table class="center-block">
+                    <tr>
+                        <td class="table-label">Age:</td>
+                        <td>27</td>
+                    </tr>
+                    <tr>
+                        <td class="table-label">Education:</td>
+                        <td>"Lviv Polytechnic" National University, specialist.</td>
+                    </tr>
+                    <tr>
+                        <td class="table-label">Specialisations:</td>
+                        <td>system programming.</td>
+                    </tr>
+                    <tr>
+                        <td class="table-label">Common skills:</td>
+                        <td>HTML5, CSS3, JavaScript.</td>
+                    </tr>
+                    <tr>
+                        <td class="table-label">OS:</td>
+                        <td>Linux, Windows, Android.</td>
+                    </tr>
+                    <tr>
+                        <td class="table-label">VCS:</td>
+                        <td>Github</td>
+                    </tr>
+                    <tr>
+                        <td class="table-label">English level:</td>
+                        <td>intermediate</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-md-6 col-md-push-6">
+                <p>It was my dream to become a programist during a lot of years, and now it comes true. I choosed web-development not so long ago, and i'm realy interested in it. I have devoted a lot of my free time for learning program languages, making portfolio and now I'm ready to start more difficult real projects! Every day I'm growing up in web-development, studing something new, and I'm not going to stop.</p> 
+            </div>
+            <div class="col-xs-12 col-md-6 col-md-pull-6">
+                <h2 class="text-center">My hobbies</h2>
+                <div class="col-xs-6 col-md-3 hobbie">
+                    <div class="center-block"><img src="img/guitar.png" alt=""></div>
+                    <h3 class="text-center">Guitar</h3>
+                </div>
+                <div class="col-xs-6 col-md-3 hobbie">
+                    <div class="center-block"><img src="img/skate.png" alt=""></div>
+                    <h3 class="text-center">Skateboarding</h3>
+                </div>
+                <div class="col-xs-6 col-md-3 hobbie">
+                    <div class="center-block"><img src="img/snowboard.png" alt=""></div>
+                    <h3 class="text-center">Snowboarding</h3>
+                </div>
+                <div class="col-xs-6 col-md-3 hobbie">
+                    <div class="center-block"><img src="img/fishing.png" alt=""></div>
+                    <h3 class="text-center">Fishing</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="skills" id="skills">
+    <h1 class="text-center">Skills</h1>
+    <hr class="text-center">
+    <div class="container">
+        <div class="row skills-wraper">
+            <div class="wrap-2">
+                <div class="more-wrap col-xs-12">
+                    <div class="skills-item">
+                        <img src="img/css+html.png" alt="html+css" class="image-responsive center-block">
+                        <h3 class="text-center">HTML+CSS</h3>
+                        <p class="text-center"> Flexbox, mediaquaries, transition, fontface, keyframes </p>
+                    </div>
+                    <div class="skills-item">
+                        <img src="img/Javascript.png" alt="javaScript" class="image-responsive center-block">
+                        <h3 class="text-center">JavaScript</h3>
+                        <p class="text-center"></p>
+                    </div>
+                    <div class="skills-item">
+                        <img src="img/bootstrap.png" alt="bootstrap" class="image-responsive center-block">
+                        <h3 class="text-center">Bootstrap</h3>
+                        <p class="text-center">Grid system, table, responsive images, tabs, carousel, spoilers, panel-group, dropdown </p>
+                    </div>
+                    <div class="skills-item">
+                        <img src="img/jquery.png" alt="jQuery" class="image-responsive center-block">
+                        <h3 class="text-center">jQuery</h3>
+                        <p class="text-center">Changing DOM-tree elements, animations, events.</p>
+                    </div>
+                    <div class="skills-item">
+                        <img src="img/sass-logo.png" alt="sass" class="image-responsive center-block">
+                        <h3 class="text-center">SASS</h3>
+                        <p class="text-center">Variables, mixins, import, BEM</p>
+                    </div>
+                    <div class="skills-item">
+                        <img src="img/gulp.png" alt="gulp" class="image-responsive center-block">
+                        <h3 class="text-center">Gulp</h3>
+                        <p class="text-center">Configuring and optimize project, including plugins, build project</p>
+                    </div>
+                    <div class="skills-item">
+                        <img src="img/opencart.png" alt="gulp" class="image-responsive center-block">
+                        <h3 class="text-center">Opencart</h3>
+                        <p class="text-center">Instalation and configuring.</p>
+                    </div>
+                    <div class="skills-item">
+                        <img src="img/photoshop.png" alt="gulp" class="image-responsive center-block">
+                        <h3 class="text-center">Photoshop</h3>
+                        <p class="text-center">Basic knowladge.</p>
+                    </div>
+                    <h2>Now studing</h2>
+                    <div class="skills-item">
+                        <img src="img/react.png" alt="gulp" class="image-responsive center-block">
+                        <h3 class="text-center">React.js</h3>
+                    </div>
+                    <div class="skills-item">
+                        <img src="img/wordpress.png" alt="gulp" class="image-responsive center-block">
+                        <h3 class="text-center">Wordpress</h3>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="whatdo" id="work">
+    <div class="container">
+        <div class="row">
+        <h1>Activity</h1>
+        <hr>
+            <div class="col-xs-12 col-md-4">
+                <div class="icons">
+                    <span class="fa fa-desktop">
+                </div>
+                <h3>Responsive</h3>
+                <p>My projects looks great on different devices.</p>
+            </div>
+            <div class="col-xs-12 col-md-4">
+                <div class="icons">
+                    <span class="fa fa-newspaper-o"></span>
+                </div>
+                <h3>Crossbrowser</h3>
+                <p>Working great on different browsers and operation systems.</p>
+            </div>
+            <div class="col-xs-12 col-md-4">
+                <div class="icons">
+                    <span class="fa fa-code"></span>
+                </div>
+                <h3>Perfomance</h3>
+                <p>Valid code and maximum optimized.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="portfolio" id="portfolio">
+    <div class="container">
+        <div class="row">
+            <h1 class="text-center">Personal projects</h1>
+            <hr class="text-center">
+            <div class="col-md-6 portfolio-item item-1">
+                <div></div>
+                <div class="proj-wrap">
+                    <div>
+                        <h3>Learn English!</h3>
+                        <p>The main target of this project is motivation to learn english.</p>
+                        <a href="#" target="_blank">Check it out</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 portfolio-item item-2">
+                <div></div>
+                <div class="proj-wrap">
+                    <div>
+                        <h3>Amazing world</h3>
+                        <p>My testing project on which I practiced to improve jquery, make animation.</p>
+                        <a href="#" target="_blank">Check it out</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer id="contacts">
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-md-8 col-md-offset-2 soc-wrap">
+                <a href="https://www.facebook.com/victor.sapozhnik" target="_blank" class="facebook contact"></a>
+                <a href="https://www.instagram.com/stillk0r/" target="_blank" class="instagram contact"></a>
+                <a href="#" target="_blank" class="linkedin contact"></a>
+                <a href="https://github.com/victor2dvlp" target="_blank" class="github contact"></a>
+                <a href="#" target="_blank" class="skype contact"></a>
+            </div>
 
-
-<div class="container">
-	<div class="row">
-		<div class="tabs">
-			<ul class="nav nav-tabs">
-				<li class="nav nav-tabs active col-xs-3"><a href="#resp-websites" data-toggle="tab">
-					<div class="hexahedron blue image-responsive center-block">
-						<span class="fa fa-tablet"></span>
-					</div>
-					<h3 class="clearfix">Responsive <br>
-					 Websites</h3>
-				</a></li>
-				<li class="nav nav-tabs col-xs-3"><a href="#e-comerce" data-toggle="tab">
-				<div class="hexahedron yellow image-responsive center-block">
-						<span class="fa fa-shopping-cart"></span>
-					</div>
-					<h3>e Comerce <br> websites</h3>
-				</a></li>
-				<li class="nav nav-tabs col-xs-3"><a href="#daily-blog" data-toggle="tab">
-				<div class="hexahedron green image-responsive center-block">
-						<span class="fa fa-globe"></span>
-					</div>
-					<h3>Daily blog <br> websites</h3>
-				</a></li>
-				<li class="nav nav-tabs col-xs-3"><a href="#search-based" data-toggle="tab">
-					<div class="hexahedron orange image-responsive center-block">
-						<span class="fa fa-search"></span>
-					</div>
-					<h3>Search based <br> websites</h3>
-				</a></li>
-			</ul>
-			<div class="tab-content">
-				<div class="tab-pane active fade in" id="resp-websites">
-					<div class="tablet">
-						<img class="image-responsive" src="img/screen.png" alt="screen">
-					</div>
-						<h3 class="text-center">Responsive Websites</h3>
-						<p>Hello my friens! I'm trying to change file directly from github!!! (It's my decond trying)) <br>
-						Wish good luch to me!!! ;)) <br>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. <br><br>
-						It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-				</div>
-				<div class="tab-pane fade" id="e-comerce">
-					<div class="tablet">
-							<img class="image-responsive" src="img/screen.png" alt="screen">
-					</div>
-					<h3 class="text-center">e Comerce websites</h3>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. <br><br>
-					It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-				</div>
-				<div class="tab-pane fade" id="daily-blog">
-					<div class="tablet">
-						<img class="image-responsive" src="img/screen.png" alt="screen">
-					</div>
-					<h3 class="text-center">Daily blog websites</h3>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. <br><br>
-					It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-				</div>
-				<div class="tab-pane fade" id="search-based">
-					<div class="tablet">
-						<img class="image-responsive" src="img/screen.png" alt="screen">
-					</div>
-					<h3 class="text-center">Search based websites</h3>
-					<p> Text added from phone!  <br> 
-						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. <br><br>
-					It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-
-<div class="container whychoose">
-	<div class="row">
-		<div class="col-xs-12 col-md-5 browser image-responsive">
-			<img src="img/content_browser.jpg" alt="content">
-		</div>
-		<div class="col-xs-12 col-md-7 descript">
-			<h3>Why choose us?</h3>
-			<ul>
-				<li>Lorem Ipsum is simply dummy text of the printing and typesetting</li>
-				<li>Lorem Ipsum has been the industry's standard dummy text ever</li>
-				<li>When an unknown printer took a galley of type and scrambled</li>
-				<li>It has survived not only five centuries, but also the leap into electronic </li>
-				<li>It was popularised in the 1960s with the release of Letraset sheets containing</li>
-				<li>More recently with desktop publishing software like Aldus PageMaker </li>
-			</ul>
-		</div>
-	</div>
-</div>
-<hr>
-<div class="container forms">
-	<div class="row">
-		<div class="col-xs-12 col-md-6">
-			<div class="member">
-				<h3>Member login</h3>
-				<form action="" class="navbar-form">
-					<div class="form-group">
-						<input type="text" class="form-control" placeholder="User name" value="">
-					</div>
-					<div class="form-group">
-						<input type="password" class="form-control" placeholder="Password" value="">
-					</div>
-					<button type="submit">Log me in.</button>
-				</form>	
-			</div>
-		</div>
-		<div class="col-xs-12 col-md-6">
-			<div class="subscribe">
-				<h3>Subscribe to our weekly newsletter</h3>
-				<form action="" class="navbar-form">
-					<div class="form-group">
-						<input type="text" class="form-control" placeholder="e-mail address" value="">
-					</div>
-					<div class="form-group">
-						<button type="submit">Subscribe</button>
-					</div>
-					
-				</form>	
-			</div>
-		</div>
-	</div>
-</div>
-<footer>
-	<div class="container">
-		<div class="row">
-			<div class="col-xs-12 col-md-2">
-				<h3>About us</h3>
-				<ul>
-					<li><a href="#">About us</a></li>
-					<li><a href="#">Why us</a></li>
-					<li><a href="#">Customers Stories</a></li>
-					<li><a href="#">Press resources</a></li>
-					<li><a href="#">Press releases</a></li>
-					<li><a href="#">Contact us</a></li>
-				</ul>
-			</div>
-			<div class="col-xs-12 col-md-2">
-				<h3>About us</h3>
-				<ul>
-					<li><a href="#">About us</a></li>
-					<li><a href="#">Why us</a></li>
-					<li><a href="#">Customers Stories</a></li>
-					<li><a href="#">Press resources</a></li>
-					<li><a href="#">Press releases</a></li>
-					<li><a href="#">Contact us</a></li>
-				</ul>
-			</div>
-			<div class="col-xs-12 col-md-5">
-				<h3>Testimoanials</h3>
-				<a href="#"><span class="fa fa-chevron-circle-left"></span></a>
-				<a href="#"><span class="fa fa-chevron-circle-right"></span></a>
-				<p>
-					Lorem Ipsum is simply dummy text of the printing and 
-					typesetting industry. Lorem Ipsum has been the industr
-					standard dummy text ever since the 1500s, 
-					when an unknown printer took a 
-				</p>
-				<p>
-					Lorem Ipsum is simply
-					Owner, Lorem Ipsum
-				</p>
-			</div>
-			<div class="col-xs-12 col-md-3">
-				<h1>Leo/-</h1>
-				<p>© cssauthor.com</p>
-			</div>
-		</div>
-	</div>
-<div class="container easy-carousel">
-	<div class="row">
-		<div class="owl-carousel">
-			<div class="slide">
-				<h4>1</h4>
-				<img src="img/fotos/1.jpg" alt="">
-			</div>
-			<div class="slide">
-				<h4>2</h4>
-				<img src="img/fotos/2.jpg" alt="">
-			</div>
-			<div class="slide">
-				<h4>3</h4>
-				<img src="img/fotos/3.jpg" alt="">
-			</div>
-			<div class="slide">
-				<h4>4</h4>
-				<img src="img/fotos/4.jpg" alt="">
-			</div>
-			<div class="slide">
-				<h4>5</h4>
-				<img src="img/fotos/5.jpg" alt="">
-			</div>
-			<div class="slide">
-				<h4>6</h4>
-				<img src="img/fotos/6.jpg" alt="">
-			</div>
-			<div class="slide">
-				<h4>7</h4>
-				<img src="img/fotos/7.jpg" alt="">
-			</div>
-			<div class="slide">
-				<h4>8</h4>
-				<img src="img/fotos/8.jpg" alt="">
-			</div>
-			<div class="slide">
-				<h4>9</h4>
-				<img src="img/fotos/9.jpg" alt="">
-			</div>
-			<div class="slide">
-				<h4>10</h4>
-				<img src="img/fotos/10.jpg" alt="">
-			</div>
-			<div class="slide">
-				<h4>11</h4>
-				<img src="img/fotos/11.jpg" alt="">
-			</div>
-		</div>
-	</div>
-</div>
+        </div>
+        <h3>&copy; Victor Sapozhnyk</h3>
+    </div>
 </footer>
-
-
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.js"></script>
-    <script src="libs/OwlCarousel2-2.2.1/dist/owl.carousel.min.js"></script>
-     <script src="js/common.js"></script>
+<script src="js/libs.min.js"></script>
+<script src="js/common.js"></script>
 </body>
 </html>

@@ -78,30 +78,40 @@ $(document).ready(function() {
     $(window).scroll(function(){
         $('.mynavbar li').removeAttr('style');
         $('.mynavbar .respmenu-item').removeAttr('style');
+        $('.mynavbar .respmenu-item a').removeAttr('style');
         if( $('#home')[0].getBoundingClientRect().top == 0 ){
             $('.mynavbar [href="#home"]').parent('li').css('background', '#fff');
             $('.mynavbar [href="#home"]').parent('.respmenu-item').css({'background': '#fff', 'color' : '#000'});
+            $('.mynavbar [href="#home"]').parent('.respmenu-item').children('a').css( {'color' : '#000'});
+
         }
 
         if( $('#about')[0].getBoundingClientRect().top < window.innerHeight && $('#about')[0].getBoundingClientRect().top > 0  ){
             $('.mynavbar [href="#about"]').parent('li').css('background', '#fff');
             $('.mynavbar [href="#about"]').parent('.respmenu-item').css({'background': '#fff', 'color' : '#000'});
+            $('.mynavbar [href="#about"]').parent('.respmenu-item').children('a').css( {'color' : '#000'});
         }
         if( $('#about')[0].getBoundingClientRect().top < 0 && $('#skills')[0].getBoundingClientRect().bottom > window.innerHeight  ){
             $('.mynavbar [href="#skills"]').parent('li').css('background', '#fff');
             $('.mynavbar [href="#skills"]').parent('.respmenu-item').css({'background': '#fff', 'color' : '#000'});
+            $('.mynavbar [href="#skills"]').parent('.respmenu-item').children('a').css( {'color' : '#000'});
+
         }
         if( $('#work')[0].getBoundingClientRect().top > 0 && $('#skills')[0].getBoundingClientRect().bottom < window.innerHeight  ){
             $('.mynavbar [href="#work"]').parent('li').css('background', '#fff');
             $('.mynavbar [href="#work"]').parent('.respmenu-item').css({'background': '#fff', 'color' : '#000'});
+            $('.mynavbar [href="#work"]').parent('.respmenu-item').children('a').css( {'color' : '#000'});
         }
         if( $('#work')[0].getBoundingClientRect().top < 0 && $('#portfolio')[0].getBoundingClientRect().bottom > window.innerHeight ){
             $('.mynavbar [href="#portfolio"]').parent('li').css('background', '#fff');
             $('.mynavbar [href="#portfolio"]').parent('.respmenu-item').css({'background': '#fff', 'color' : '#000'});
+            $('.mynavbar [href="#portfolio"]').parent('.respmenu-item').children('a').css( {'color' : '#000'});
         }
         if( $('#contacts')[0].getBoundingClientRect().top < window.innerHeight ){
             $('.mynavbar [href="#contacts"]').parent('li').css('background', '#fff');
             $('.mynavbar [href="#contacts"]').parent('.respmenu-item').css({'background': '#fff', 'color' : '#000'});
+            $('.mynavbar [href="#contacts"]').parent('.respmenu-item').children('a').css( {'color' : '#000'});
+
         }
 
         if( $('.mynavbar')[0].getBoundingClientRect().top <= 0 ) {

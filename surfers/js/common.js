@@ -49,4 +49,40 @@ $(document).ready( function() {
 	$('.custom-navbar button').on('click', function() {
 		$('.custom-collapse').slideToggle('slow');
 	});
+//*************  Stars *********************************************************
+	$('.stars img').mouseover(function(){
+		var el = $(this);
+
+		el.attr({'src': 'img/star.png'});
+		//el.parent().children('img').css('background', 'red');
+
+		for(var i = 0; i <= $(this).index(); i++ ){
+			el.parent().children('img')[i].setAttribute("src", "img/star.png");
+		}
+	});
+
+	$('.stars img').mouseout(function(){
+		var el = $(this);
+
+		el.parent().children('img').attr({'src': 'img/Star_non_chacked.png'});
+
+		el.parent().children('img').each(function(index){
+			if( $(this).hasClass("selected") ){
+				console.log('selected: ' + $(this).index());
+				$(this).attr({'src': 'img/star.png'});
+			}
+		});
+	});
+
+	$('.stars img').on('click', function(){
+		var el = $(this);
+		
+		el.parent().children('img').attr({'src': 'img/Star_non_chacked.png'});
+		el.parent().children('img').removeClass("selected");
+		for(var i = 0; i <= $(this).index(); i++ ){
+			el.parent().children('img')[i].setAttribute("src", "img/star.png");
+			el.parent().children('img')[i].setAttribute("class", "selected");
+		}
+	});
+//******************************************************************************
 } );

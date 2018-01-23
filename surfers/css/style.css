@@ -110,15 +110,15 @@ header {
       z-index: 3;
       font-family: 'Montserrat';
       font-weight: bold;
-      font-size: 130px;
+      font-size: 125px;
       color: #f7f7f7;
       text-transform: uppercase;
       vertical-align: bottom;
       line-height: 100px;
       letter-spacing: 1px;
-      -webkit-transform: rotate(-90deg) translate(40%, 250px);
-          -ms-transform: rotate(-90deg) translate(40%, 250px);
-              transform: rotate(-90deg) translate(40%, 250px); }
+      -webkit-transform: rotate(-90deg) translate(40%, 240px);
+          -ms-transform: rotate(-90deg) translate(40%, 240px);
+              transform: rotate(-90deg) translate(40%, 240px); }
     header .wraper .counter {
       position: absolute;
       top: 80px;
@@ -154,6 +154,11 @@ header {
     header .owl-boards .b-item .description {
       padding-right: 50px;
       padding-bottom: 50px; }
+      header .owl-boards .b-item .description .stars img {
+        display: inline;
+        max-height: 100px;
+        width: 25px;
+        padding-right: 0; }
       header .owl-boards .b-item .description ul {
         display: inline-block;
         width: 100%;
@@ -189,12 +194,29 @@ header {
           transition: opacity .5s; }
         header .owl-boards .b-item .description .tabs p:first-child {
           opacity: 1; }
+      header .owl-boards .b-item .description .tabs::scrollbar-track {
+        background-color: darkgrey;
+        outline: 1px solid slategrey; }
+      header .owl-boards .b-item .description .tabs::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        -webkit-border-radius: 10px;
+                border-radius: 10px;
+        background-color: #F5F5F5; }
+      header .owl-boards .b-item .description .tabs::-webkit-scrollbar {
+        width: 7px;
+        background-color: #ccc; }
+      header .owl-boards .b-item .description .tabs::-webkit-scrollbar-thumb {
+        -webkit-border-radius: 10px;
+                border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        background-color: #aba6a6; }
     header .owl-boards .b-item h3 {
       font-family: 'Montserrat';
       font-weight: bold;
       font-size: 20px;
       color: #000;
       margin-top: 40px;
+      margin-bottom: 20px;
       line-height: 30px; }
     header .owl-boards .b-item h2 {
       display: inline-block;

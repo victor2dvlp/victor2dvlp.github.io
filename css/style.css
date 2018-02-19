@@ -533,8 +533,13 @@ body {
             transform: translateX(-50%) scale(0);
     -webkit-transition: all 1s;
     -o-transition: all 1s;
-    transition: all 1s; }
-    .whatdo .icons .fa {
+    transition: all 1s;
+    font-family: 'FontAwesome';
+    font-size: 5rem;
+    color: #fff;
+    content: '\f135';
+    line-height: 10rem; }
+    .whatdo .icons .fab {
       font-family: 'FontAwesome';
       font-size: 5rem;
       color: #fff;

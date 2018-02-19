@@ -612,7 +612,7 @@ footer {
       -o-transition: all .2s ease-in;
       transition: all .2s ease-in; }
     footer .soc-wrap .facebook::before {
-      content: '\f230';
+      content: '\f09a';
       font-family: 'FontAwesome';
       font-size: 3rem;
       position: absolute;

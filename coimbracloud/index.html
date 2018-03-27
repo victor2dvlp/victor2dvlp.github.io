@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>VicToR's LoaDeR</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+<div class="container-fluid">
+	<div class="row header-content">
+		<nav>
+			<img src="img/var4.png" alt="" class="logo" id="logo">
+			<div class="col-xs-12 col-md-4 pull-right">
+				<ul>
+					<li id="how2use">Як користуватись?</li>
+					<li id="rules">Правила</li>
+				</ul>
+			</div>
+			<div class="howuse">
+				<div class="cancel pull-right">
+					<div class="line-1"></div>
+					<div class="line-2"></div>
+				</div>
+				<h2>Як користуватись сервісом?</h2> 
+				<h3>Розміщення файлів в сховищі</h3>
+				<ul>
+					<li>Натискаємо кнопку Upload.</li>
+					<li>Перетягуємо файли на панель з зображенням файла, або клікаємо по панелі і вибираємо файли в діалоговому вікні.</li>
+					<li>Натискаємо кнопку Send</li>
+					<li>На сусідній панелі відображається список файлів в сховищі.</li>
+					<li>Над списком генерується ключ доступу до сховища, за яким можна скачати дані файли. Передайте цей ключ користувачам, яким потрібно передати файли, і вони зможуть з легкістю їх завантажити.</li>
+				</ul>
+				<h3>Як скачати файли?</h3>
+				<ul>
+					<li>В головному меню натискаємо кнопку Download</li>
+					<li>Вводимо ключ доступу до сховища.</li>
+					<li>В разі правильності введення ключа Вам відобразиться список файлів. В кожному елементі списку справа розміщена кнопка завантаження. Натисніть на неї і браузер здійснить завантаження.</li>
+				</ul>
+				<h3>Щоб перейти в головне меню, клікніть по логотипу в лівому верхньому куті сайту.</h3>
+			</div>
+			<div class="rules">
+				<div class="cancel pull-right">
+					<div class="line-1"></div>
+					<div class="line-2"></div>
+				</div>
+				<h2>Правила користування сервісом</h2>
+				<ul>
+					<li>Максимальна кількість файлів, яку можна завантажити: 7</li>
+					<li>Через 7 днів файли будуть видалені зі сховища.</li>
+					<li>Максимальний розмір файла: 100МБ</li>
+					<li>Адміністрація сайту не несе відповідальності за зберезження конфеденційності та цілісності файлів.</li>
+					<li>ANTIHYPE!!!</li>
+
+				</ul>
+			</div>
+		</nav>
+	</div>
+	
+</div>
+<div class="container">
+	<div class="row" id="main-screen">
+		<div class="col-xs-12 col-md-8 col-md-offset-2">
+			<div class="header-text">
+				<h2>Вітаємо на </h2> <img class="img-responsive" src="img/var4.png" alt="coimbraCloud">
+				<p>сервіс для зберігання та обміну файлами</p>
+			</div>
+			<div class="start-screen">
+				<div class="btn-start-left">
+					<button class="btn-start" id="download-file">
+						Download
+						<div class="pulse"></div>
+					</button>
+				</div>
+				<div class="col-xs-12 col-md-6 col-md-offset-3">
+					<img src="img/waiting.gif" alt="" class="img-responsive" >
+				</div>
+				<div class="btn-start-right">
+					<button class="btn-start" id="upload-file"> 
+						Upload
+						<div class="pulse"></div>
+					</button>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	<div class="row" id="key-input-screen">
+		<div class="col-xs-12 col-md-6 col-md-offset-3">
+			<div class="key-input">
+				<input type="text" id="file-key" class="center-block" placeholder="введіть ключ сюди">
+				<p class="wrong-key"></p>
+				<button type="button" class="center-block" id="key-button">скачати</button>
+			</div>
+		</div>
+	</div>
+	<div class="row" id="filesScreen">
+		<div class="col-xs-12 col-md-4">
+			<form class="text-center" name="upload" method="POST" enctype="multipart/form-data">
+				
+				<label for="file" id="label">
+					<input type="file" id="file" name="myfile" class="center-block">
+					<i class="far fa-file-alt"></i>
+				</label>
+				<div id="log"></div>
+				<div class="download">
+					<div class="dnl-progress">
+						<span>0%</span>
+					</div>
+				</div>
+				<button type="button" name="submit" id="send" class="control-load">Send</button>
+			</form>
+			<img src="img/meeseeks.jpg" alt="" class="img-responsive" id="meeseeks">
+			
+		</div>
+		<div class="col-xs-12 col-md-8">
+			<div class="file-list">
+				<div class="key-field">
+					<h2>Ключ до сховища:</h2>
+					<span class="key"></span>
+					<div class="input-controls">
+
+						<input type="text" id="key-form">
+						<input type="button" value="OK" id="key-form-submit">
+					</div> 
+					<div class="actions">
+						<i class="fas fa-key" id="input-key">
+							<span class="tooltip">Ввести ключ існуючого сховища</span>
+						</i>
+						<i class="fas fa-clipboard" id="copy2clipboard">
+							<span class="tooltip">Скопіювати ключ</span>
+						</i>
+					</div>
+				</div>
+				<ul>
+					<li class="template">Файлів не знайдено</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="modal-message">
+	<div class="main-window">
+		<div class="msg-content">
+			<div class="cancel">
+				<div class="line-1"></div>
+				<div class="line-2"></div>
+			</div>
+			<h2 class="text-center">Error</h2>
+			<p>Якась помилка</p>
+			<p class="error">syntax error</p>
+		</div>
+		
+	</div>
+</div>
+<footer>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-12">
+				<p>
+					&copy; Victor Sapozhnyk <br>
+					logo designed by Yaroslav Karpiy
+				</p>
+			</div>
+		</div>
+	</div>
+</footer>
+	<script src="js/scripts.min.js"></script>
+
+</body>
+</html>
